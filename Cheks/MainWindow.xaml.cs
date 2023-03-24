@@ -40,5 +40,10 @@ namespace Cheks
                 }
             }
         }
+
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    _viewModel.SelectedDirectory = fbd.SelectedPath;
+        //}
     }
 }

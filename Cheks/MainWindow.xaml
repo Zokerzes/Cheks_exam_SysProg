@@ -20,7 +20,10 @@
                     DockPanel.Dock="Right"
                         x:Name="SelectDirectory"
                         Click="SelectDirectory_Click"/>
-                <TextBox></TextBox>
+                <TextBox Text="{Binding Path=SelectedDirectory,
+                    UpdateSourceTrigger=PropertyChanged}"
+                         IsReadOnly="True"
+                         ></TextBox>
             </DockPanel>
             
             <Button Content="Начать сканирование"
@@ -39,7 +42,9 @@
                    DockPanel.Dock="Top"/>
             <Button Content="Сохранить"
                     DockPanel.Dock="Bottom"/>
-            <TextBox></TextBox>
+            <ListView ItemsSource="{Binding Path=ForBiddenWords}">              
+            </ListView>
+            
         </DockPanel>
         
     </Grid>

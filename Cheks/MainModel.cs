@@ -14,6 +14,11 @@ namespace Cheks
         const string FORB_FILE = "BlokList.txt";
         const string COPY_DIRECT_NAME = "Forbfidden Files";
 
+        public MainModel()
+        {
+            LoadBiddenWords();
+        }
+
         private string _selectedDirectory;
         public string SelectedDirectory
         {
@@ -126,3 +131,4 @@ namespace Cheks
 
         }
     }
+}
